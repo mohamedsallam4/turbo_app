@@ -43,3 +43,5 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+android/.kotlin/sessions/kotlin-compiler-1028181662637239890.salive
+android/.kotlin/sessions/kotlin-compiler-1028181662637239890.salive
