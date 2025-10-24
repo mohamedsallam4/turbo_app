@@ -34,6 +34,8 @@ class ApiResult<T> {
       return onError((this as ApiError).error);
     }
   }
+
+  static Future error(ApiErrorModel handle) async {}
 }
 
 class ApiSuccess<T> extends ApiResult<T> {

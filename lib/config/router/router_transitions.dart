@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 
 class RouterTransitions {
+  
   static PageRouteBuilder buildVertical(Widget widget) {
+    //دا استاتيك كلاس ودا بتاخد منه انستانس مباشرة بدون عمل ليه اوبجيكت
+    //*هنا عرفنا function اسمها buildVertical ترجع PageRouteBuilder. static معناها تقدر تنادي عليها من غير ما تعمل instance من RouterTransitions — تناديها زي RouterTransitions.buildVertical(MyPage()).
+
     return PageRouteBuilder(
+      //PageRouteBuilder بيسمحلك تتحكم في طريقة بناء الصفحة (pageBuilder) وفي تأثير الانتقال (transitionsBuilder).
       pageBuilder: (context, animation, secondaryAnimation) => widget,
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        //transitionsBuilder هو إلي بيبني التأثير البصري عند الانتقال.
         const begin = Offset(0.0, 1.0);
         const end = Offset.zero;
         const curve = Curves.easeInOut;

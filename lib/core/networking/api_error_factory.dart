@@ -8,6 +8,7 @@ class ApiErrorFactory {
     message: "Something went wrong",
     icon: Icons.error,
  //لو انا عندي خطأ تاني او خطأ غير الديو اكسيبشن 
-    statusCode: LocalStatusCode.defaultError,
+    statusCode: LocalStatusCode.defaultError, errors: ["Error occured"],
+    
   );
 }
